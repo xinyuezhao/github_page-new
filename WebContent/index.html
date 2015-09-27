@@ -1,0 +1,162 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>My GitHub</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="index.js"></script>
+</head>
+
+
+<!--<script>
+    var images=[
+            "img/banner.png",
+            "img/banner-bg.jpg"
+    ];
+    var current=0;
+    function prev(){
+        if (current === 0) {
+            current = images.length-1;
+        } else {
+            current -= 1;
+        }
+        document.getElementById("banner").style.backgroundImage = "url(" + images[current]+ ")";
+    }
+    function next(){
+        if (current === images.length-1) {
+            current = 0;
+        } else {
+            current += 1;
+        }
+        document.getElementById("banner").style.backgroundImage = "url(" + images[current]+ ")";
+    }
+</script>-->
+
+
+<body>
+<div id="container">
+	<div id="header">
+		<div id="menu">
+			<ul>
+			<div id="link">
+			<li><a href="#">首页</a></li>
+			<li><a href="#">文章</a></li>
+			<li><a href="#">作品</a></li>
+			<li><a href="#">关于</a></li>
+			</div>
+			</ul>
+			<div id="icon-github"><a href="www.github.com"><img src="img/icon-github.png" /></a></div>
+			<div id="mylogo"><a href="www.github.com"><img src="img/pig.png" /></a></div>
+		</div>
+		<div id="banner">
+			 <div id="list" >
+			 		<img src="img/banner2.png"  alt="1"/>
+ 					<img src="img/banner.png"  alt="1"/>
+        			<img src="img/banner2.png"  alt="2"/> 
+        			<img src="img/banner.png"  alt="2"/>
+			 </div>
+			<div id="prev" class="arrow" onclick="turnleft();"><img src="img/left.png" /></div>
+			<div id="next" class="arrow" onclick="turnright();"><img src="img/right.png" /></div>
+			<div class="box">
+				<h1 class="heading">看这里看这里</h1>
+				<p class="article">看这里看这里看这里看这里看这里看这里看这里看这里看这里看这里看这里看这里</p>
+			</div>
+		</div>
+	</div>
+	<div id="pagebody">
+		<div id="up">
+			<div class="PANE">
+				<div class="pane">
+					<img src="img/picture1.jpg" class="picture"/>
+					<p class="pane-paragraph1">这是一段话这只是一段话这是一段话这是一段话这只是一段话这是一段话</p>
+					<p class="pane-paragraph2">这是一段话这只是一段话这是一段话这是一段话这只是一段话这是一段话</p>
+					<p class="pane-paragraph3">这是一段话这只是一段话这是一段话这是一段话这只是一段话这是一段话</p>
+				</div>
+				<div class="pane">
+					<img src="img/picture2.jpg" class="picture"/>
+					<p class="pane-paragraph4">就是他就是他就是他就是他就是他</p>
+				</div>
+				<div class="pane">
+					<img src="img/picture3.jpg" class="picture"/>
+					<p class="pane-paragraph4">看下面看下面看下面看下面看下面看下面看下面看下面看下面看下面看下面看下面看下面看下面看下面看下面看下面看下面看下面看下面</p>
+				</div>
+			</div>
+		</div>
+		<div id="down">
+			<div class="circular-image">
+			</div>
+			<h1 class="down-heading">Hi,I am VICTORY!</h1>
+			<div class="down-paragraph"><p>看这里看这里看这里看这里看这里看这里看这里看这里看这里看这里看这里看这里看这里看这里看这里看这里看这里看这里看这里看这里看这里</p></div>
+		</div>
+	</div>
+	<div id="footer"> 
+			<div class="top">
+			<ul>
+			<li>主页</li>
+			<li>文章</li>
+			<li>作品</li>
+			<li>关于</li>
+			</ul>
+			</div> 
+		<div class="footer-link">
+			<ul>
+			<li>学习资料</li>
+			<li><p></p></li>
+			<li><a href="www.github.com">LINK</a></li>
+			<li><a href="www.github.com">LINK</a></li>
+			<li><a href="www.github.com">LINK</a></li>
+			<li><a href="www.github.com">LINK</a></li>
+			</ul>
+		</div>
+	
+		<div class="footer-link">
+			<ul>
+			<li>友情链接</li>
+			<li><p></p></li>
+			<li><a href="www.github.com">LINK</a></li>
+			<li><a href="www.github.com">LINK</a></li>
+			<li><a href="www.github.com">LINK</a></li>
+			<li><a href="www.github.com">LINK</a></li>
+			</ul>
+		</div>
+	
+		<div class="footer-link">
+			<ul>
+			<li>学习资料</li>
+			<li><p></p></li>
+			<li><a href="www.github.com">LINK</a></li>
+			<li><a href="www.github.com">LINK</a></li>
+			<li><a href="www.github.com">LINK</a></li>
+			<li><a href="www.github.com">LINK</a></li>
+			</ul>
+		</div>
+	
+		<div class="footer-link">
+			<ul>
+			<li>学习资料</li>
+			<li><p></p></li>
+			<li><a href="www.github.com">LINK</a></li>
+			<li><a href="www.github.com">LINK</a></li>
+			<li><a href="www.github.com">LINK</a></li>
+			<li><a href="www.github.com">LINK</a></li>
+			</ul>
+		</div>
+	
+		<div class="footer-link">
+			<ul>
+			<li>学习资料</li>
+			<li><p></p></li>
+			<li><a href="www.github.com">LINK</a></li>
+			<li><a href="www.github.com">LINK</a></li>
+			<li><a href="www.github.com">LINK</a></li>
+			<li><a href="www.github.com">LINK</a></li>
+			</ul>
+		</div>
+		<p class="paragragh">版权信息</p>
+		<img src="img/icon-github.png"  class=bottom-icon />>
+	</div>
+</div>
+
+
+</body>
+</html>
