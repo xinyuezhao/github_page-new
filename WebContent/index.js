@@ -1,13 +1,20 @@
 
-            var banner = document.getElementById('banner');
-            var list = document.getElementById('list');
-            var prev = document.getElementById('prev');
-            var next = document.getElementById('next');
+
+            var banner;
+            var list;
+            var prev;
+            var next;
             var len = 2;
             var interval = 10;
             var timer;
             
+$(document).ready(function(){
+            banner = document.getElementById('banner');
+            list = document.getElementById('list');
+            prev = document.getElementById('prev');
+            next = document.getElementById('next');
 
+});
 
             function animate (offset) {
                 if (offset == 0) {
@@ -16,7 +23,6 @@
                 var time = 300;
                 var inteval = 10;
                 var speed = offset/(time/inteval);
-                var list = document.getElementById('list');
                 var left = parseInt(list.style.left) + offset;
                 console.log("animate:"+offset+" style.left:"+list.style.left+" left:"+left);
                 var go = function (){
