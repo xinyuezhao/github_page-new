@@ -24,19 +24,19 @@ $(document).ready(function(){
                 var inteval = 10;
                 var speed = offset/(time/inteval);
                 var left = parseInt($('#list').css("left")) + offset;
-                console.log("animate:"+offset+" style.left:"+list.style.left+" left:"+left);
+                console.log("offset:"+offset+" speed:" + speed + " left:"+left);
                 var go = function (){
-                    if ( (speed > 0 && parseInt(list.style.left) < left) || (speed < 0 && parseInt(list.style.left) > left)) {
-                        list.style.left = parseInt(list.style.left) + speed + 'px';
+                    if ( (speed > 0 && parseInt($('#list').css("left")) < left) || (speed < 0 && parseInt($('#list').css("left")) > left)) {
+                        $('#list').css("left", parseInt($('#list').css("left")) + speed + 'px');
                         setTimeout(go, inteval);
                     }
                     else {
-                        list.style.left = left + 'px';
+                        $('#list').css("left", left + 'px');
                         if(left>-1200){
-                            list.style.left = -1200 * len + 'px';
+                            $('#list').css("left",  parseInt($('#list').css("left")) -1200 * len + 'px');
                         }
                         if(left<(-1200* len)) {
-                            list.style.left = -1200+'px';
+                            $('#list').css("left", parseInt($('#list').css("left")) -1200 + 'px');
                         }
                     }
                 }
