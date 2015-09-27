@@ -23,7 +23,7 @@ $(document).ready(function(){
                 var time = 300;
                 var inteval = 10;
                 var speed = offset/(time/inteval);
-                var left = parseInt(list.style.left) + offset;
+                var left = parseInt($('#list').css("left")) + offset;
                 console.log("animate:"+offset+" style.left:"+list.style.left+" left:"+left);
                 var go = function (){
                     if ( (speed > 0 && parseInt(list.style.left) < left) || (speed < 0 && parseInt(list.style.left) > left)) {
