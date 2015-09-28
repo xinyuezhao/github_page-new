@@ -29,14 +29,15 @@ $(document).ready(function(){
                     if ( (speed > 0 && parseInt($('#list').css("left")) < left) || (speed < 0 && parseInt($('#list').css("left")) > left)) {
                         $('#list').css("left", parseInt($('#list').css("left")) + speed + 'px');
                         setTimeout(go, inteval);
+
                     }
                     else {
                         $('#list').css("left", left + 'px');
                         if(left>-1200){
-                            $('#list').css("left",  parseInt($('#list').css("left")) -1200 * len + 'px');
+                            $('#list').css("left", parseInt($('#list').css("left")) -1200 * len + 'px');
                         }
-                        if(left<(-1200* len)) {
-                            $('#list').css("left", parseInt($('#list').css("left")) -1200 + 'px');
+                        if(left<-2400){
+                            $('#list').css("left", parseInt($('#list').css("left")) + 1200 * len + 'px');
                         }
                     }
                 }
